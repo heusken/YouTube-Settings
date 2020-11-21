@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Yooop</title>
+</head>
+<body>
+<p>動画のアドレス：</p>
+<p><input type="url" id="video" size="40" maxlength="1000" placeholder="https://youtu.be/YrK9veoB-3w"></p>
+<p>オプション：</p>
+<p>再生範囲 [0:0:0 - 23:59:59]</p>
+<p>開始 [<input type="number" id="start_h" value="0" min="0" max="23" step="1">時
+<input type="number" id="start_m" value="0" min="0" max="59" step="1">分
+<input type="number" id="start_s" value="0" min="0" max="59" step="1">秒]</p>
+<p>終了 [<input type="number" id="end_h" value="0" min="0" max="23" step="1">時
+<input type="number" id="end_m" value="0" min="0" max="59" step="1">分
+<input type="number" id="end_s" value="0" min="0" max="59" step="1">秒]</p>
+<p>（片方だけを指定するにはもう一方を全て0にする）</p>
+<p><input type="checkbox" id="autoplay">自動再生</p>
+<p><input type="checkbox" id="controls" checked>コントロールの表示</p>
+<p><input type="checkbox" id="fs" checked>最大化ボタンの表示</p>
+<p><input type="checkbox" id="loop">全体リピート</p>
+<p><input type="checkbox" id="nologo">ロゴの非表示</p>
+<p><button id="jump">Get Link</button></p>
+<script src="youloop.js"></script>
+</body>
+</html>
